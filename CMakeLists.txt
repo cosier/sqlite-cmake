@@ -67,6 +67,7 @@ endif()
 
 # sqlite3 as library
 add_library(sqlite3 sqlite3.c)
+
 if(IS_LINUX)
     if(BUILD_SHARED_LIBS)
         target_link_libraries(sqlite3 pthread dl)
